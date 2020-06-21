@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity4" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <View
+            android:id="@+id/button2"
+            android:layout_width="292dp"
+            android:layout_height="73dp"
+            android:background="@drawable/home_front"
+            android:drawableRight="@drawable/arrow2"
+            android:paddingRight="50dp"
+            android:text="User Name"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintVertical_bias="0.093" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/dp_box"
+            map:layout_constraintBottom_toBottomOf="@+id/button2"
+            map:layout_constraintEnd_toEndOf="@+id/button2"
+            map:layout_constraintHorizontal_bias="0.078"
+            map:layout_constraintStart_toStartOf="@+id/button2"
+            map:layout_constraintTop_toTopOf="@+id/button2"
+            map:layout_constraintVertical_bias="0.347" />
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service name"
+            android:textSize="10dp"
+            map:layout_constraintBottom_toBottomOf="@+id/button2"
+            map:layout_constraintEnd_toEndOf="@+id/button2"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintStart_toEndOf="@+id/imageView12"
+            map:layout_constraintTop_toTopOf="@+id/button2"
+            map:layout_constraintVertical_bias="0.288" />
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classic Manicure"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toBottomOf="@+id/button2"
+            map:layout_constraintEnd_toEndOf="@+id/button2"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintStart_toEndOf="@+id/imageView12"
+            map:layout_constraintTop_toBottomOf="@+id/textView75"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITEM LIST"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toBottomOf="@+id/button2"
+            map:layout_constraintEnd_toEndOf="@+id/button2"
+            map:layout_constraintHorizontal_bias="0.894"
+            map:layout_constraintStart_toEndOf="@+id/textView75"
+            map:layout_constraintTop_toTopOf="@+id/button2"
+            map:layout_constraintVertical_bias="0.326" />
+
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="58dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="Cancel job"
+            android:textColor="#ffffff"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/btn_vendor_start"
+            map:layout_constraintVertical_bias="0.304" />
+
+        <Button
+            android:id="@+id/btn_vendor_start"
+            android:layout_width="380dp"
+            android:layout_height="58dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="Job Start"
+            android:textColor="#ffffff"
+            map:layout_constraintBottom_toBottomOf="@+id/imageView"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="416dp"
+            android:layout_height="162dp"
+            android:background="@drawable/info_box"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/button2"
+            map:layout_constraintVertical_bias="0.749" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Payment Method"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_vendor_start"
+            map:layout_constraintEnd_toStartOf="@+id/textView34"
+            map:layout_constraintHorizontal_bias="0.344"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.159" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Cash"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_vendor_start"
+            map:layout_constraintEnd_toStartOf="@+id/textView34"
+            map:layout_constraintHorizontal_bias="0.235"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.284" />
+
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:text="Chat"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_vendor_start"
+            map:layout_constraintEnd_toEndOf="@+id/imageView5"
+            map:layout_constraintHorizontal_bias="0.779"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.688" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="46dp"
+            android:layout_height="27dp"
+            android:text="Call"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_vendor_start"
+            map:layout_constraintEnd_toStartOf="@+id/textView36"
+            map:layout_constraintHorizontal_bias="0.439"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toBottomOf="@+id/textView37"
+            map:layout_constraintVertical_bias="0.574" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="73dp"
+            android:layout_height="18dp"
+            android:text="PKR 1,000"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_vendor_start"
+            map:layout_constraintEnd_toEndOf="@+id/imageView5"
+            map:layout_constraintHorizontal_bias="0.857"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.236" />
+
+        <TextView
+            android:layout_width="73dp"
+            android:layout_height="18dp"
+            android:text="Your Bill"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_vendor_start"
+            map:layout_constraintEnd_toEndOf="@+id/imageView5"
+            map:layout_constraintHorizontal_bias="0.644"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.236" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</fragment>

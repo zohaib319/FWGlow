@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="326dp"
+            android:layout_height="80dp"
+            android:background="@drawable/home_front"
+            android:drawableRight="@drawable/arrow2"
+            android:paddingRight="50dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintVertical_bias="0.12"
+            />
+
+        <TextView
+            android:id="@+id/txt_view"
+            android:layout_width="95dp"
+            android:layout_height="20dp"
+            android:width="15dp"
+            android:height="15dp"
+            android:text="Service name"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toTopOf="@+id/txt_view3"
+            map:layout_constraintEnd_toStartOf="@+id/txt_view2"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintStart_toStartOf="@+id/txt_view3"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txt_view2"
+            android:layout_width="80dp"
+            android:layout_height="18dp"
+            android:width="15dp"
+            android:height="15dp"
+            android:text="ITEM LIST"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toBottomOf="@+id/view_1"
+            map:layout_constraintEnd_toEndOf="@+id/view_1"
+            map:layout_constraintHorizontal_bias="0.89"
+            map:layout_constraintStart_toStartOf="@+id/view_1"
+            map:layout_constraintTop_toTopOf="@+id/view_1"
+            map:layout_constraintVertical_bias="0.225" />
+
+        <TextView
+            android:id="@+id/txt_view3"
+            android:layout_width="161dp"
+            android:layout_height="29dp"
+            android:width="15dp"
+            android:height="15dp"
+            android:text="Classic Manicure"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="@+id/view_1"
+            map:layout_constraintEnd_toEndOf="@+id/view_1"
+            map:layout_constraintHorizontal_bias="0.478"
+            map:layout_constraintStart_toStartOf="@+id/view_1"
+            map:layout_constraintTop_toTopOf="@+id/view_1"
+            map:layout_constraintVertical_bias="0.745" />
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/dp_box"
+            map:layout_constraintBottom_toBottomOf="@+id/view_1"
+            map:layout_constraintEnd_toEndOf="@+id/view_1"
+            map:layout_constraintHorizontal_bias="0.047"
+            map:layout_constraintStart_toStartOf="@+id/view_1"
+            map:layout_constraintTop_toTopOf="@+id/view_1"
+            map:layout_constraintVertical_bias="0.466" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="384dp"
+            android:layout_height="138dp"
+            android:background="@drawable/info_box"
+            android:drawableRight="@drawable/arrow2"
+            android:paddingRight="50dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+
+            map:layout_constraintTop_toBottomOf="@+id/img_c2"
+            map:layout_constraintVertical_bias="0.233" />
+
+        <TextView
+            android:id="@+id/txt2_view"
+            android:layout_width="161dp"
+            android:layout_height="29dp"
+            android:width="15dp"
+            android:height="15dp"
+            android:text="Cash"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="@+id/view_2"
+            map:layout_constraintEnd_toEndOf="@+id/view_2"
+            map:layout_constraintHorizontal_bias="0.116"
+            map:layout_constraintStart_toStartOf="@+id/view_2"
+            map:layout_constraintTop_toBottomOf="@+id/txt4_view"
+            map:layout_constraintVertical_bias="0.517" />
+
+        <TextView
+            android:id="@+id/txt3_view"
+            android:layout_width="69dp"
+            android:layout_height="29dp"
+            android:width="15dp"
+            android:height="15dp"
+            android:text="Promo"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="@+id/view_2"
+            map:layout_constraintEnd_toEndOf="@+id/view_2"
+            map:layout_constraintHorizontal_bias="0.812"
+            map:layout_constraintStart_toEndOf="@+id/txt2_view"
+            map:layout_constraintTop_toTopOf="@+id/view_2"
+            map:layout_constraintVertical_bias="0.752" />
+
+        <TextView
+            android:id="@+id/txt4_view"
+            android:layout_width="161dp"
+            android:layout_height="29dp"
+            android:width="15dp"
+            android:height="15dp"
+            android:text="Your Bill"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="@+id/view_2"
+            map:layout_constraintEnd_toEndOf="@+id/view_2"
+            map:layout_constraintHorizontal_bias="0.125"
+            map:layout_constraintStart_toStartOf="@+id/view_2"
+            map:layout_constraintTop_toTopOf="@+id/view_2"
+            map:layout_constraintVertical_bias="0.22" />
+
+        <TextView
+            android:id="@+id/txt5_view"
+            android:layout_width="52dp"
+            android:layout_height="24dp"
+            android:width="15dp"
+            android:height="15dp"
+            android:text="PKR 1,000"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="@+id/view_2"
+            map:layout_constraintEnd_toEndOf="@+id/view_2"
+            map:layout_constraintHorizontal_bias="0.71"
+            map:layout_constraintStart_toEndOf="@+id/txt4_view"
+            map:layout_constraintTop_toTopOf="@+id/view_2"
+            map:layout_constraintVertical_bias="0.21" />
+
+        <Button
+            android:id="@+id/btn_confirm_location"
+            android:layout_width="380dp"
+            android:layout_height="58dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="Confirm Location"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/view_2" />
+
+
+        <Button
+            android:id="@+id/btn_rate"
+            android:layout_width="380dp"
+            android:layout_height="58dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="Rate"
+            android:visibility="gone"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/view_2" />
+
+        <ImageView
+            android:id="@+id/img_c3"
+            android:layout_width="78dp"
+            android:layout_height="91dp"
+            android:src="@drawable/c3"
+            android:visibility="invisible"
+            map:layout_constraintBottom_toBottomOf="@+id/img_c2"
+            map:layout_constraintEnd_toEndOf="@+id/img_c2"
+            map:layout_constraintHorizontal_bias="0.497"
+            map:layout_constraintStart_toStartOf="@+id/img_c2"
+            map:layout_constraintTop_toTopOf="@+id/img_c2"
+            map:layout_constraintVertical_bias="0.499" />
+
+        <ImageView
+            android:id="@+id/img_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/c1"
+            android:visibility="invisible"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/img_c2"
+            android:layout_width="252dp"
+            android:layout_height="381dp"
+            android:src="@drawable/c2"
+            android:visibility="invisible"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="@+id/img_c1"
+            map:layout_constraintTop_toTopOf="@+id/img_c1"
+            map:layout_constraintVertical_bias="0.501" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</fragment>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/booking_my"
+        android:title="My Bookings"
+        android:icon="@drawable/ic_launcher_account"
+        />
+    <item
+        android:id="@+id/payout_detail"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Payout Details"
+        />
+    <item
+        android:id="@+id/update_password"
+        android:title="Update Password"
+        android:icon="@drawable/ic_launcher_password" />
+    <item
+        android:id="@+id/update_email"
+        android:title="Update Email"
+        android:icon="@drawable/ic_launcher_email"
+       />
+    <item
+        android:id="@+id/delete_account"
+        android:title="Delete Account"
+        android:icon="@drawable/ic_launcher_delete"
+        />
+</menu>

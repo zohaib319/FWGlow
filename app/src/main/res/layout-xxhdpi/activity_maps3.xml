@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity3">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="505dp"
+            android:background="@drawable/bg_4"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.518"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="@+id/imageView2"
+            map:layout_constraintVertical_bias="0.996" />
+
+        <View
+            android:id="@+id/button2"
+            android:layout_width="292dp"
+            android:layout_height="73dp"
+            android:background="@drawable/home_front"
+            android:drawableRight="@drawable/arrow2"
+            android:paddingRight="50dp"
+            android:text="User Name"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.495"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintVertical_bias="0.094" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/dp_box"
+            map:layout_constraintBottom_toBottomOf="@+id/button2"
+            map:layout_constraintEnd_toEndOf="@+id/button2"
+            map:layout_constraintHorizontal_bias="0.078"
+            map:layout_constraintStart_toStartOf="@+id/button2"
+            map:layout_constraintTop_toTopOf="@+id/button2"
+            map:layout_constraintVertical_bias="0.347" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="157dp"
+            android:layout_height="159dp"
+            android:background="@drawable/dp_box"
+            map:layout_constraintBottom_toTopOf="@+id/textView30"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.501"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/button2"
+            map:layout_constraintVertical_bias="0.867" />
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="380dp"
+            android:layout_height="58dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            map:layout_constraintBottom_toBottomOf="@+id/imageView"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="416dp"
+            android:layout_height="162dp"
+            android:background="@drawable/info_box"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/textView32"
+            map:layout_constraintVertical_bias="0.276" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="171dp"
+            android:layout_height="26dp"
+            android:text="Distance from you"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.501"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/rating_bar"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="57dp"
+            android:layout_height="24dp"
+            android:text="10km"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.506"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/textView33"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="73dp"
+            android:layout_height="18dp"
+            android:text="Your Bill"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+            map:layout_constraintEnd_toStartOf="@+id/textView34"
+            map:layout_constraintHorizontal_bias="0.144"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.159" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:text="Chat"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+            map:layout_constraintEnd_toEndOf="@+id/imageView5"
+            map:layout_constraintHorizontal_bias="0.866"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="46dp"
+            android:layout_height="27dp"
+            android:text="Call"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+            map:layout_constraintEnd_toStartOf="@+id/textView36"
+            map:layout_constraintHorizontal_bias="0.122"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toBottomOf="@+id/textView37"
+            map:layout_constraintVertical_bias="0.553" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:text="Vendor"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            map:layout_constraintVertical_bias="0.49" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="73dp"
+            android:layout_height="18dp"
+            android:text="PKR 1,000"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            map:layout_constraintBottom_toTopOf="@+id/btn_cancel"
+            map:layout_constraintEnd_toEndOf="@+id/imageView5"
+            map:layout_constraintHorizontal_bias="0.857"
+            map:layout_constraintStart_toStartOf="@+id/imageView5"
+            map:layout_constraintTop_toTopOf="@+id/imageView5"
+            map:layout_constraintVertical_bias="0.159" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="64dp"
+            android:layout_height="27dp"
+            android:text="Rating"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.497"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/textView30"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressBackgroundTint="#ffffff"
+            android:progressTint="#d7b26d"
+            android:stepSize="0.5"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/textView30"
+            map:layout_constraintVertical_bias="0.126" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</fragment>
